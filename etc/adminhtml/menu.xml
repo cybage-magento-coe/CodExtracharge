@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    <add id="Cybage_CodExtracharge::codrate" title="Manage COD rate" module="Cybage_CodExtracharge" sortOrder="10" parent="Magento_Sales::sales" action="custommenu/create/index" resource="Magestore_CustomMenu::menu_item"/>
+    <add id="Cybage_CodExtracharge::top" module="Prince_Adminlogs" resource="Magento_Backend::content" sortOrder="20" title="Pincode Checker"/>
+    <add action="cyb_codextracharge/pincodechecker/index" id="cybage_codExtracharge::pincodechecker" module="Cybage_CodExtracharge" parent="Cybage_CodExtracharge::top" resource="Magento_Backend::content" sortOrder="10" title="Pincode Checker"/>
+    <add action="adminhtml/system_config/edit/section/pincode" id="Cybage_CodExtracharge::pincodechecker_settings" module="Cybage_CodExtracharge" parent="Cybage_CodExtracharge::top" resource="Magento_Backend::content" sortOrder="20" title="Settings"/>
+    </menu>
+</config>

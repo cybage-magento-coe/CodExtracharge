@@ -1,0 +1,10 @@
+<!-- ko if: shouldDisplay() -->
+<tr class="totals cyb_codextracharge excl2">
+    <th class="mark" scope="row">
+        <span class="label" data-bind="text: getLabel()"></span>
+    </th>
+    <td class="amount">
+        <span class="price" data-bind="text: getValue(), attr: {'data-th': title}"></span>
+    </td>
+</tr>
+<!-- /ko -->
